@@ -1,2 +1,14 @@
 @import 'layout/header';
 @import 'pages/home';
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  padding: 45px 100px;
+}
