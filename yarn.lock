@@ -7621,6 +7621,15 @@
   "resolved" "https://registry.npmjs.org/node-releases/-/node-releases-2.0.14.tgz"
   "version" "2.0.14"
 
+"node-sass@npm:sass@^1.72.0":
+  "integrity" "sha512-Gpczt3WA56Ly0Mn8Sl21Vj94s1axi9hDIzDFn9Ph9x3C3p4nNyvsqJoQyVXKou6cBlfFWEgRW4rT8Tb4i3XnVA=="
+  "resolved" "https://registry.npmjs.org/sass/-/sass-1.72.0.tgz"
+  "version" "1.72.0"
+  dependencies:
+    "chokidar" ">=3.0.0 <4.0.0"
+    "immutable" "^4.0.0"
+    "source-map-js" ">=0.6.2 <2.0.0"
+
 "normalize-package-data@^2.3.2":
   "integrity" "sha512-/5CMN3T0R4XTj4DcGaexo+roZSdSFW/0AOOTROrjxzCG1wrWXEsGbRKevjlIL+ZDE4sZlJr5ED4YW0yqmkK+eA=="
   "resolved" "https://registry.npmjs.org/normalize-package-data/-/normalize-package-data-2.5.0.tgz"
@@ -9728,15 +9737,6 @@
     "neo-async" "^2.5.0"
     "pify" "^3.0.0"
     "semver" "^5.5.0"
-
-"sass@^1.72.0":
-  "integrity" "sha512-Gpczt3WA56Ly0Mn8Sl21Vj94s1axi9hDIzDFn9Ph9x3C3p4nNyvsqJoQyVXKou6cBlfFWEgRW4rT8Tb4i3XnVA=="
-  "resolved" "https://registry.npmjs.org/sass/-/sass-1.72.0.tgz"
-  "version" "1.72.0"
-  dependencies:
-    "chokidar" ">=3.0.0 <4.0.0"
-    "immutable" "^4.0.0"
-    "source-map-js" ">=0.6.2 <2.0.0"
 
 "sax@^1.2.4":
   "integrity" "sha512-0s+oAmw9zLl1V1cS9BtZN7JAd0cW5e0QH4W3LWEK6a4LaLEA2OTpGYWDY+6XasBLtz6wkm3u1xRw95mRuJ59WA=="
