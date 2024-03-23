@@ -3,12 +3,23 @@
   justify-content: space-between;
   align-items: center;
 
-  &-link {
+  &__link {
     display: flex;
     gap: 57px;
 
     a {
       color: black;
+    }
+  }
+}
+
+// @media (max-width: 1024px) {}
+
+@media (max-width: 767.98px) {
+  .navbar {
+
+    &__link {
+      gap: 26px;
     }
   }
 }

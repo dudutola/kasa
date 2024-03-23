@@ -4,7 +4,7 @@ function Card() {
   return (
     <div className="card">
       <div className="card__content">
-        <p className="card__content-title">Titre de la location</p>
+        <p className="card__content--title">Titre de la location</p>
       </div>
     </div>
   )

@@ -20,7 +20,7 @@
   &__content {
     width: 100%;
 
-    &-title {
+    &--title {
       font-size: 18px;
       color: white;
       font-weight: bold;
@@ -28,5 +28,19 @@
       width: 100px;
       padding: 0 0 20px 20px;
     }
+  }
+}
+
+// @media (max-width: 1024px) {}
+
+@media (max-width: 767.98px) {
+  .cards {
+    grid-template-columns: none;
+    grid-gap: 20px;
+    border: none;
+    border-radius: 0;
+    padding: 22px 0 0;
+    background-color: white;
+    grid-auto-flow: row;
   }
 }

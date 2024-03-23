@@ -15,3 +15,23 @@
     font-size: 24px;
   }
 }
+
+// @media (max-width: 1024px) {}
+
+@media (max-width: 767.98px) {
+  .footerbar {
+
+    & nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 66px 0 58px;
+    }
+
+    p {
+      margin: 12px 0 0;
+      font-size: 12px;
+      width: 30%;
+    }
+  }
+}

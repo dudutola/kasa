@@ -42,3 +42,32 @@
       }
   }
 }
+
+// @media (max-width: 1024px) {}
+
+@media (max-width: 767.98px) {
+  .banner {
+    height: 112px;
+    margin-bottom: 22px;
+    border-radius: 10px;
+
+    img {
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
+      height: 152px;
+      filter: none;
+    }
+
+    &__title {
+      align-items: flex-start;
+      margin-left: 16px;
+
+        & h1 {
+          -webkit-text-stroke: 0px;
+          font-size: 24px;
+          width: 62%;
+        }
+    }
+  }
+}
