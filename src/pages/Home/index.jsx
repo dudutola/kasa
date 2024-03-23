@@ -7,12 +7,12 @@ import { generateCards } from "../../components/Card";
 
 function Home() {
   return (
-    <main className="container">
+    <div className="container">
       <Banner />
       <div className="cards">
         {generateCards(6)}
       </div>
-    </main>
+    </div>
   );
 }
 

@@ -5,10 +5,9 @@ import BannerImage from "../../assets/Image source 1.png";
 function Banner() {
   return (
     <div className="banner">
-      <div className="banner-image">
-        <img src={BannerImage} alt="Image source" />
-      </div>
-      <div className="banner-title">
+      <img src={BannerImage} alt="Sea and Rocks" />
+      <div className="banner__overlay"></div>
+      <div className="banner__title">
         <h1>Chez vous, partout et ailleurs</h1>
       </div>
     </div>
