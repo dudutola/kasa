@@ -4,7 +4,6 @@ import "../../styles/components/_banner.scss";
 function Banner({ imageUrl, alt, filterStyle, title }) {
   const bannerStyle = filterStyle ?
   { boxShadow: filterStyle.boxShadow } : {};
-  console.log('Filter Style:', filterStyle);
 
   return (
     <div className="banner" style={bannerStyle}>
