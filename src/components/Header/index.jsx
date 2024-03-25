@@ -9,7 +9,7 @@ function Header() {
       <img src={Logo} alt="Logo Kasa" width={143.32} height={46}/>
       <div className="navbar__link">
         <Link to='/'>Accueil</Link>
-        <Link to=''>A Propos</Link>
+        <Link to='/about'>A Propos</Link>
       </div>
     </nav>
   )

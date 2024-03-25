@@ -1,14 +1,17 @@
 import React from "react";
 import "../../styles/components/_banner.scss";
-import BannerImage from "../../assets/Image source 1.png";
 
-function Banner() {
+function Banner({ imageUrl, alt, filterStyle, title }) {
+  const bannerStyle = filterStyle ?
+  { boxShadow: filterStyle.boxShadow } : {};
+  console.log('Filter Style:', filterStyle);
+
   return (
-    <div className="banner">
-      <img src={BannerImage} alt="Sea and Rocks" />
+    <div className="banner" style={bannerStyle}>
+      <img src={imageUrl} alt={alt}  />
       <div className="banner__overlay"></div>
       <div className="banner__title">
-        <h1>Chez vous, partout et ailleurs</h1>
+       { title && <h1>{title}</h1> }
       </div>
     </div>
   );
