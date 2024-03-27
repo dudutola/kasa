@@ -3,9 +3,6 @@
 
 .collapse {
   padding: 0 108.05px;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
 
   &__card {
     display: flex;
@@ -15,15 +12,37 @@
     background-color: #FF6060;
     border-radius: 5px;
 
+    position: relative;
+    z-index: 1;
+
     &--title {
       font-size: 24px;
       font-weight: bold;
       padding: 10px 15px 8px;
     }
 
-    .fa-chevron-up {
+    .fa-chevron-up,
+    .fa-chevron-down  {
       font-size: 20px;
       padding: 11px 20px 9px;
     }
+  }
+
+  &__content {
+    overflow: hidden;
+    max-height: 0;
+    top: -100px;
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+
+    & p {
+      padding: 16px;
+      background-color: #f9f9f9;
+      margin: 0;
+    }
+  }
+
+  &__content.open {
+    max-height: 1000px;
   }
 }

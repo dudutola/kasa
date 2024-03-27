@@ -12,12 +12,15 @@ function Collapse({ title, content }) {
   return (
     <>
       <article className="collapse__card">
+      {/* <article className={`collapse__card ${displayText ? 'open' : ''}`}> */}
         <div className="collapse__card--title">
           <span>{title}</span>
         </div>
-        <i className="fa-solid fa-chevron-up" onClick={handleClick}></i>
+        <i className={`fa-solid fa-chevron-${displayText ? 'down' : 'up'}`} onClick={handleClick}></i>
       </article>
-      {displayText && <p>{content}</p>}
+      <div className={`collapse__content ${displayText ? 'open' : ''}`}>
+        <p>{content}</p>
+      </div>
     </>
   );
 }
