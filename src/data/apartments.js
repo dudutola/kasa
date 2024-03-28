@@ -1,4 +1,4 @@
-export const appartmentsList = JSON.parse(
+export const apartmentsList = JSON.parse(
 `[
   {
     "id": "c67ab8a7",
