@@ -17,15 +17,16 @@ function Home() {
         title="Chez vous, partout et ailleurs"
         filterStyle={{ boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)" }}
       />
-     <div className="cards">
-        {apartmentsList.map(({ id, title, cover, location }) => (
-          <Card
+      <div className="cards">
+        {apartmentsList.map(({ id, title, cover, location }) => {
+          return <Card
             key={id}
+            id={id}
             title={title}
             cover={cover}
             location={location}
           />
-        ))}
+        })}
       </div>
     </div>
   );

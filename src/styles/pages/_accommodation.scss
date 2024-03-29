@@ -1,0 +1,62 @@
+.tete {
+  display: flex;
+  justify-content: space-between;
+
+  &__title {
+    font-size: 36px;
+    color: #FF6060;
+    margin: 0;
+  }
+
+  &__location {
+    font-size: 18px;
+    margin: 0;
+  }
+
+  &__host {
+    display: flex;
+    gap: 10px;
+
+    p {
+      font-size: 18px;
+      color: #FF6060;
+      width: 57%;
+      text-align: end;
+    }
+
+    img {
+      border-radius: 100px;
+      width: 64px;
+      height: 64px;
+    }
+  }
+}
+
+.tags-rating {
+  display: flex;
+  justify-content: space-between;
+
+  .tags {
+    display: flex;
+    gap: 10px;
+
+    .tag {
+      color: white;
+      border-radius: 10px;
+      background-color: #FF6060;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 5px 30px;
+    }
+  }
+
+  .rating {
+    .fa.fa-star.rated {
+      color: #FF6060;
+    }
+
+    .fa.fa-star.unrated {
+      color: #E3E3E3;
+    }
+  }
+}

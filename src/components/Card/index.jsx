@@ -1,15 +1,19 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-function Card({ title, cover, location }) {
+function Card({ id, title, cover, location }) {
+  // console.log(id)
   return (
-    <article className="card">
-      <div className="card__content">
-        <img src={cover} alt={title} />
-        <div className="card__content--location">
-          <p className="title">{location}</p>
+    <Link to={`/accommodation/${id}`}>
+      <article className="card">
+        <div className="card__content">
+          <img src={cover} alt={title} />
+          <div className="card__content--location">
+            <p className="title">{location}</p>
+          </div>
         </div>
-      </div>
-    </article>
+      </article>
+    </Link>
   )
 }
 
