@@ -1,0 +1,34 @@
+.slideshow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 470px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+  border-radius: 25px;
+
+  &__banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .active {
+    display: none;
+  }
+
+  &__arrows {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}

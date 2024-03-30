@@ -1,7 +1,7 @@
 import Collapse from "../Collapse";
 import "../../styles/components/_collapse.scss";
 
-function AccommodatContainer({ title, pictures, description, host, rating,location, equipments, tags }) {
+function AccommodatContainer({ title, description, host, rating,location, equipments, tags }) {
 
   function renderStars() {
     const ratingNumber = parseInt(rating)
@@ -15,7 +15,7 @@ function AccommodatContainer({ title, pictures, description, host, rating,locati
   }
 
   return (
-    <div className="accommodation">
+    <>
       <article className="infos">
         <div>
           <p className="infos__title">{title}</p>
@@ -23,7 +23,7 @@ function AccommodatContainer({ title, pictures, description, host, rating,locati
         </div>
         <div className="infos__host">
           <p className="infos__host--name">{host.name}</p>
-          <img src={host.picture} alt="L'hôtesse de l'appartement" className="infos__host--pic" />
+          <img src={host.picture} alt="L'hôte de l'appartement" className="infos__host--pic" />
         </div>
       </article>
       <article className="tags-rating">
@@ -46,7 +46,7 @@ function AccommodatContainer({ title, pictures, description, host, rating,locati
           <Collapse title="Équipements" content={equipments} initialState={false} />
         </article>
       </div>
-    </div>
+    </>
   );
 }
 
