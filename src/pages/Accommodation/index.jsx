@@ -25,7 +25,6 @@ function Accommodation() {
         <AccommodatContainer
           id={selectedApartment.id}
           title={selectedApartment.title}
-          pictures={selectedApartment.pictures}
           description={selectedApartment.description}
           host={selectedApartment.host}
           rating={selectedApartment.rating}

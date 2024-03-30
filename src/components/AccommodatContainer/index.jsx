@@ -22,7 +22,13 @@ function AccommodatContainer({ title, description, host, rating,location, equipm
           <p className="infos__location">{location}</p>
         </div>
         <div className="infos__host">
-          <p className="infos__host--name">{host.name}</p>
+          <div className="infos__host--name">
+            {host.name.split(' ').map((part, index) => (
+              <p key={index} className={`name-part ${index === 0 ? 'first-name' : 'last-name'}`}>
+                {part}
+              </p>
+            ))}
+          </div>
           <img src={host.picture} alt="L'hôte de l'appartement" className="infos__host--pic" />
         </div>
       </article>
@@ -40,10 +46,20 @@ function AccommodatContainer({ title, description, host, rating,location, equipm
       </article>
       <div className="details">
         <article>
-          <Collapse title="Description" content={description} initialState={false} />
+          <Collapse
+            title="Description"
+            content={description}
+            initialState={false}
+          />
         </article>
         <article>
-          <Collapse title="Équipements" content={equipments} initialState={false} />
+          <Collapse
+            title="Équipements"
+            content={equipments.map((equipment, index) => (
+              <span key={index}>{equipment}</span>
+            ))}
+            initialState={false}
+          />
         </article>
       </div>
     </>

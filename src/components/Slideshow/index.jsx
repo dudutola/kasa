@@ -19,15 +19,20 @@ function Slideshow({ pictures }) {
 
   return (
     <div className="slideshow">
+      {pictures.length > 1 && (
+        <div className="slideshow__counter">
+          {currentIndex + 1}/{pictures.length}
+        </div>
+      )}
+      {pictures.length > 1 && (
+        <div className="slideshow__arrows">
+          <img src={LessThan} alt="L'appartement en détails" onClick={handlePrevious} />
+          <img src={GreaterThan} alt="L'appartement en détails" onClick={handleNext} />
+        </div>
+      )}
       {pictures.map((picture, index) => (
         <img src={picture} alt="L'appartement en détails" key={index} className={index === currentIndex ? 'slideshow__banner' : 'slideshow__banner active'}/>
       ))}
-      <div className="slideshow__arrows">
-        <img src={LessThan} alt="L'appartement en détails" onClick={handlePrevious} />
-        <img src={GreaterThan} alt="L'appartement en détails" onClick={handleNext} />
-      </div>
-      <div className="dots">
-      </div>
     </div>
   )
 }

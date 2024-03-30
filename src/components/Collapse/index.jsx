@@ -18,7 +18,7 @@ function Collapse({ title, content, initialState }) {
         <i className={`icon fa-solid fa-chevron-${displayText ? 'down' : 'up'}`} onClick={handleClick}></i>
       </article>
       <div className={`collapse__content ${displayText ? 'open' : ''}`}>
-        <p>{content}</p>
+        <p className="equipment-only">{content}</p>
       </div>
     </>
   );
