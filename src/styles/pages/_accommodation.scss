@@ -1,62 +1,72 @@
-.tete {
-  display: flex;
-  justify-content: space-between;
-
-  &__title {
-    font-size: 36px;
-    color: #FF6060;
-    margin: 0;
-  }
-
-  &__location {
-    font-size: 18px;
-    margin: 0;
-  }
-
-  &__host {
+.accommodation {
+  .infos {
     display: flex;
-    gap: 10px;
+    justify-content: space-between;
+    margin-bottom: 8px;
 
-    p {
+    &__title {
+      font-size: 36px;
+      color: #FF6060;
+      margin: 0;
+    }
+
+    &__location {
       font-size: 18px;
-      color: #FF6060;
-      width: 57%;
-      text-align: end;
+      margin: 0;
     }
 
-    img {
-      border-radius: 100px;
-      width: 64px;
-      height: 64px;
+    &__host {
+      display: flex;
+      gap: 10px;
+
+      &--name {
+        font-size: 18px;
+        color: #FF6060;
+        width: 57%;
+        text-align: end;
+      }
+
+      &--pic {
+        border-radius: 100px;
+        width: 64px;
+        height: 64px;
+      }
     }
   }
-}
 
-.tags-rating {
-  display: flex;
-  justify-content: space-between;
-
-  .tags {
+  .tags-rating {
     display: flex;
-    gap: 10px;
+    justify-content: space-between;
+    margin-bottom: 24px;
 
-    .tag {
-      color: white;
-      border-radius: 10px;
-      background-color: #FF6060;
-      font-size: 14px;
-      font-weight: bold;
-      padding: 5px 30px;
+    .tags {
+      display: flex;
+      gap: 10px;
+
+      &__tag {
+        color: white;
+        border-radius: 10px;
+        background-color: #FF6060;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 5px 30px;
+      }
+    }
+
+    .rating {
+      .fa.fa-star.rated {
+        color: #FF6060;
+      }
+
+      .fa.fa-star.unrated {
+        color: #E3E3E3;
+      }
     }
   }
 
-  .rating {
-    .fa.fa-star.rated {
-      color: #FF6060;
-    }
-
-    .fa.fa-star.unrated {
-      color: #E3E3E3;
-    }
+  .details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 76px;
   }
 }

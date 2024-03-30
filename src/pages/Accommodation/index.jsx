@@ -6,6 +6,8 @@ import Banner from "../../components/Banner";
 import BannerImage from "../../assets/Image source 1.png";
 import AccommodatContainer from "../../components/AccommodatContainer";
 import "../../styles/pages/_accommodation.scss";
+import "../../styles/components/_collapse.scss";
+
 console.log(apartmentsList)
 
 function Accommodation() {
@@ -25,19 +27,17 @@ function Accommodation() {
         title="Chez vous, partout et ailleurs"
         filterStyle={{ boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)" }}
       />
-      <div className="accommodations">
-        <AccommodatContainer
-          id={selectedApartment.id}
-          title={selectedApartment.title}
-          pictures={selectedApartment.pictures}
-          description={selectedApartment.description}
-          host={selectedApartment.host}
-          rating={selectedApartment.rating}
-          location={selectedApartment.location}
-          equipments={selectedApartment.equipments}
-          tags={selectedApartment.tags}
-        />
-      </div>
+      <AccommodatContainer
+        id={selectedApartment.id}
+        title={selectedApartment.title}
+        pictures={selectedApartment.pictures}
+        description={selectedApartment.description}
+        host={selectedApartment.host}
+        rating={selectedApartment.rating}
+        location={selectedApartment.location}
+        equipments={selectedApartment.equipments}
+        tags={selectedApartment.tags}
+      />
     </div>
   );
 }

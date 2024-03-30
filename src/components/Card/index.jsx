@@ -2,9 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Card({ id, title, cover, location }) {
-  // console.log(id)
   return (
-    <Link to={`/accommodation/${id}`}>
+    <Link id={id} to={`/accommodation/${id}`}>
       <article className="card">
         <div className="card__content">
           <img src={cover} alt={title} />
@@ -17,4 +16,4 @@ function Card({ id, title, cover, location }) {
   )
 }
 
-export default Card
+export default Card;

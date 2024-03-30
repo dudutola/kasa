@@ -18,15 +18,15 @@ function Home() {
         filterStyle={{ boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)" }}
       />
       <div className="cards">
-        {apartmentsList.map(({ id, title, cover, location }) => {
-          return <Card
+        {apartmentsList.map(({ id, title, cover, location }) => (
+          <Card
             key={id}
             id={id}
             title={title}
             cover={cover}
             location={location}
           />
-        })}
+        ))}
       </div>
     </div>
   );
