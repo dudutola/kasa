@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import Collapse from "../Collapse";
 import "../../styles/components/_collapse.scss";
 
 function AccommodatContainer({ title, pictures, description, host, rating,location, equipments, tags }) {
@@ -12,11 +12,6 @@ function AccommodatContainer({ title, pictures, description, host, rating,locati
       stars.push(<i key={i} className={starClass}></i>)
     }
     return stars
-  }
-
-  const [displayText, setDisplayText] = useState(false)
-  function handleClick() {
-    setDisplayText(!displayText)
   }
 
   return (
@@ -44,28 +39,12 @@ function AccommodatContainer({ title, pictures, description, host, rating,locati
         </span>
       </article>
       <div className="details">
-        <section>
-          <article className="collapse__card">
-            <div className="collapse__card--title">
-              <span>Description</span>
-            </div>
-            <i className={`fa-solid fa-chevron-${displayText ? 'down' : 'up'}`} onClick={handleClick}></i>
-          </article>
-          <div className={`collapse__content ${displayText ? 'open' : ''}`}>
-            <span>{description}</span>
-          </div>
-        </section>
-        <section>
-          <article className="collapse__card">
-            <div className="collapse__card--title">
-              <span>Équipements</span>
-            </div>
-            <i className={`fa-solid fa-chevron-${displayText ? 'down' : 'up'}`} onClick={handleClick}></i>
-          </article>
-          <div className={`collapse__content ${displayText ? 'open' : ''}`}>
-            <span>{equipments}</span>
-          </div>
-        </section>
+        <article>
+          <Collapse title="Description" content={description} initialState={false} />
+        </article>
+        <article>
+          <Collapse title="Équipements" content={equipments} initialState={false} />
+        </article>
       </div>
     </div>
   );
