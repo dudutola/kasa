@@ -1,3 +1,15 @@
 .container-propos {
   padding: 38px 0;
 }
+
+@media (max-width: 1024px) {
+  .container-propos {
+    padding: 38px 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .container-propos {
+    padding: 19px 0;
+  }
+}

@@ -11,7 +11,6 @@
     color: #FFFFFF;
     background-color: #FF6060;
     border-radius: 5px;
-
     position: relative;
     z-index: 1;
 
@@ -52,5 +51,39 @@
 
   &__content.open {
     max-height: 1000px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .collapse {
+    padding: 0 54px;
+
+    &__card {
+      &--title {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .collapse {
+    padding: 0;
+
+    &__card {
+      &--title {
+        font-size: 13px;
+        padding: 10px;
+      }
+
+      .fa-chevron-up,
+      .fa-chevron-down  {
+        padding: 10.29px 12px 12.57px;
+      }
+    }
+
+    &__content {
+      margin-bottom: 19px;
+    }
   }
 }
