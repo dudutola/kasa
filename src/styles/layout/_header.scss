@@ -10,17 +10,13 @@
     a {
       color: black;
       text-decoration: none;
+    }
 
-      &:hover,
-      &:focus,
-      &:active{
-        text-decoration: underline;
-      }
+    .active {
+      text-decoration: underline;
     }
   }
 }
-
-// @media (max-width: 1024px) {}
 
 @media (max-width: 767.98px) {
   .navbar {
