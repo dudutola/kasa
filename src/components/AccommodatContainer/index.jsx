@@ -40,9 +40,21 @@ function AccommodatContainer({ title, description, host, rating,location, equipm
             </span>
           ))}
         </span>
-        <span className="rating">
-          {renderStars()}
-        </span>
+        <div className="container-position">
+          <span className="rating">
+            {renderStars()}
+          </span>
+          <div className="mobile__host">
+            <div className="mobile__host--name">
+              {host.name.split(' ').map((part, index) => (
+                <p key={index} className={`name-part ${index === 0 ? 'first-name' : 'last-name'}`}>
+                  {part}
+                </p>
+              ))}
+            </div>
+            <img src={host.picture} alt="L'hôte de l'appartement" className="mobile__host--pic" />
+          </div>
+        </div>
       </article>
       <div className="details">
         <article>

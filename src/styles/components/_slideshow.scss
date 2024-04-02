@@ -41,3 +41,36 @@
     width: 100%;
   }
 }
+
+@media (max-width: 1024px) {
+  .slideshow {
+    &__counter {
+      padding-bottom: 20.92px;
+    }
+
+    &__arrows {
+      img {
+        width: 60px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .slideshow {
+    min-height: 255px;
+    border-radius: 10px;
+
+    &__counter {
+      font-size: 14px;
+      padding-bottom: 6px;
+    }
+
+    &__arrows {
+      img {
+        width: 20px;
+        margin: 0 5.84px;
+      }
+    }
+  }
+}
