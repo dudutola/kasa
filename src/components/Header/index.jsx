@@ -6,7 +6,7 @@ import '../../styles/layout/_header.scss'
 function Header() {
   return (
     <nav className="navbar">
-      <img src={Logo} alt="Logo Kasa" width={143.32} height={46}/>
+      <Link to='/'><img src={Logo} alt="Logo Kasa" width={143.32} height={46}/></Link>
       <div className="navbar__link">
         <Link to='/'>Accueil</Link>
         <Link to='/about'>A Propos</Link>
