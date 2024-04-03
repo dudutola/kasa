@@ -10,17 +10,28 @@ function Collapse({ title, content, initialState }) {
   }
 
   return (
-    <>
+    // <>
+    //   <article className="collapse__card">
+    //     <div className="collapse__card--title">
+    //       <span>{title}</span>
+    //     </div>
+    //     <i className={`icon fa-solid fa-chevron-${displayText ? 'up' : 'down'}`} onClick={handleClick}></i>
+    //   </article>
+    //   <div className={`collapse__content ${displayText ? '' : 'open'}`}>
+    //     <p className="equipment-only">{content}</p>
+    //   </div>
+    // </>
+    <div className="collapse">
       <article className="collapse__card">
         <div className="collapse__card--title">
           <span>{title}</span>
         </div>
-        <i className={`icon fa-solid fa-chevron-${displayText ? 'down' : 'up'}`} onClick={handleClick}></i>
+        <i className={`icon fa-solid fa-chevron-${displayText ? 'up' : 'down'}`} onClick={handleClick}></i>
       </article>
-      <div className={`collapse__content ${displayText ? 'open' : ''}`}>
+      <div className={`collapse__content ${displayText ? '' : 'open'}`}>
         <p className="equipment-only">{content}</p>
       </div>
-    </>
+    </div>
   );
 }
 

@@ -14,7 +14,7 @@ function About() {
         imageUrl={BannerImage}
         alt="Mountains"
       />
-      <div className="collapse">
+      <div className="collapsible">
         {aboutList.map(({ id, title, content }) => (
           <Collapse
             key={id}

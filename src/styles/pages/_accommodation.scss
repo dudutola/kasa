@@ -80,6 +80,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 76px;
+    overflow: hidden;
 
     .equipment-only {
       display: flex;
@@ -195,7 +196,7 @@
     .details {
       display: flex;
       flex-direction: column-reverse;
-      gap: 0;
+      gap: 20px;
     }
   }
 }

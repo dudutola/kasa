@@ -57,22 +57,18 @@ function AccommodatContainer({ title, description, host, rating,location, equipm
         </div>
       </article>
       <div className="details">
-        <article>
-          <Collapse
-            title="Description"
-            content={description}
-            initialState={false}
-          />
-        </article>
-        <article>
-          <Collapse
-            title="Équipements"
-            content={equipments.map((equipment, index) => (
-              <span key={index}>{equipment}</span>
-            ))}
-            initialState={false}
-          />
-        </article>
+        <Collapse
+          title="Description"
+          content={description}
+          initialState={false}
+        />
+        <Collapse
+          title="Équipements"
+          content={equipments.map((equipment, index) => (
+            <span key={index}>{equipment}</span>
+          ))}
+          initialState={false}
+        />
       </div>
     </>
   );
