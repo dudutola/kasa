@@ -91,103 +91,89 @@
 
 @media (max-width: 1024px) {
   .accommodation {
-    .infos {
-      &__title {
-        font-size: 30px;
-      }
+    .appartment {
 
-      &__host {
-        &--pic {
-          width: 60px;
-          height: 60px;
+      .left-side {
+        .infos {
+          &__title {
+            font-size: 30px;
+          }
         }
       }
-    }
 
-    .tags-rating {
-      display: flex;
-
-      .tags {
-        .container-position {
-          display: none;
-        }
-
-        .mobile__host {
-          display: none;
+      .right-side {
+        .infos__host {
+          &--pic {
+            width: 60px;
+            height: 60px;
+          }
         }
       }
     }
 
     .details {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
       grid-gap: 54px;
-
-      .equipment-only {
-        display: flex;
-        flex-direction: column;
-      }
     }
   }
 }
 
 @media (max-width: 767.98px) {
   .accommodation {
-    .infos {
-      display: block;
+    .appartment {
+      justify-content: normal;
+      flex-direction: column;
 
-      &__title {
-        font-size: 18px;
-        margin-bottom: 5px;
-      }
+      .left-side {
+        .infos {
+          margin-bottom: 10px;
 
-      &__location {
-        font-size: 14px;
-        margin: 0;
-      }
+          &__title {
+            font-size: 18px;
+            margin-bottom: 5px;
+          }
 
-      &__host {
-        display: none;
-      }
-    }
-
-    .tags-rating {
-      display: block;
-      margin-bottom: 20px;
-
-      .tags {
-        &__tag {
-          font-size: 10px;
-          padding: 5px 22px;
-          margin-bottom: 16px;
-        }
-      }
-
-      .container-position {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-
-      .mobile__host {
-        display: flex;
-        gap: 10px;
-        align-items: center;
-
-        &--name {
-          font-size: 12px;
-          color: #FF6060;
-          text-align: end;
-
-          .name-part {
-            margin: 0;
+          &__location {
+            font-size: 14px;
           }
         }
 
-        &--pic {
-          border-radius: 100px;
-          width: 32px;
-          height: 32px;
+        .tags {
+          margin-bottom: 16px;
+
+          &__tag {
+            font-size: 10px;
+            padding: 5px 14px;
+          }
+        }
+      }
+
+      .right-side {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+        .infos__host {
+          margin-bottom: 13px;
+
+          &--name {
+            font-size: 12px;
+          }
+
+          &--pic {
+            width: 32px;
+            height: 32px;
+          }
+        }
+
+        .position {
+          text-align: center;
+          padding-top: 6px;
+
+          .rating {
+            .fa-star {
+              font-size: 12px;
+            }
+          }
         }
       }
     }
@@ -196,6 +182,10 @@
       display: flex;
       flex-direction: column-reverse;
       gap: 20px;
+
+      .equipment-only {
+        font-size: 12px;
+      }
     }
   }
 }
