@@ -1,78 +1,77 @@
 .accommodation {
-  .infos {
+  .appartment {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
 
-    &__title {
-      font-size: 36px;
-      color: #FF6060;
-      margin: 0;
-    }
+    .left-side {
+      .infos {
+        margin-bottom: 20px;
 
-    &__location {
-      font-size: 18px;
-      margin: 0;
-    }
+        &__title {
+          font-size: 36px;
+          color: #FF6060;
+          margin: 0;
+        }
 
-    &__host {
-      display: flex;
-      gap: 10px;
-      align-items: center;
-
-      &--name {
-        font-size: 18px;
-        color: #FF6060;
-        text-align: end;
-
-        .name-part {
+        &__location {
+          font-size: 18px;
           margin: 0;
         }
       }
 
-      &--pic {
-        border-radius: 100px;
-        width: 64px;
-        height: 64px;
-      }
-    }
-  }
+      .tags {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 24px;
 
-  .tags-rating {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 24px;
-
-    .tags {
-      display: flex;
-      gap: 10px;
-
-      &__tag {
-        color: white;
-        border-radius: 10px;
-        background-color: #FF6060;
-        font-size: 14px;
-        font-weight: bold;
-        padding: 5px 30px;
+        &__tag {
+          color: white;
+          border-radius: 10px;
+          background-color: #FF6060;
+          font-size: 14px;
+          font-weight: bold;
+          padding: 5px 30px;
+        }
       }
     }
 
-    .container-position {
-      display: none;
-    }
+    .right-side {
+      .infos__host {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin-bottom: 21px;
 
-    .rating {
-      .fa.fa-star.rated {
-        color: #FF6060;
+        &--name {
+          font-size: 18px;
+          color: #FF6060;
+          text-align: end;
+
+          .name-part {
+            margin: 0;
+          }
+        }
+
+        &--pic {
+          border-radius: 100px;
+          width: 64px;
+          height: 64px;
+        }
       }
 
-      .fa.fa-star.unrated {
-        color: #E3E3E3;
-      }
-    }
+      .position {
+        text-align: end;
 
-    .mobile__host {
-      display: none;
+        .rating {
+          .fa.fa-star.rated {
+            color: #FF6060;
+          }
+
+          .fa.fa-star.unrated {
+            color: #E3E3E3;
+          }
+        }
+      }
     }
   }
 

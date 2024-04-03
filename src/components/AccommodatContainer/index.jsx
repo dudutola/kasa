@@ -16,46 +16,38 @@ function AccommodatContainer({ title, description, host, rating,location, equipm
 
   return (
     <>
-      <article className="infos">
-        <div>
-          <p className="infos__title">{title}</p>
-          <p className="infos__location">{location}</p>
-        </div>
-        <div className="infos__host">
-          <div className="infos__host--name">
-            {host.name.split(' ').map((part, index) => (
-              <p key={index} className={`name-part ${index === 0 ? 'first-name' : 'last-name'}`}>
-                {part}
-              </p>
-            ))}
+      <div className="appartment">
+        <article className="left-side">
+          <div className="infos">
+            <p className="infos__title">{title}</p>
+            <p className="infos__location">{location}</p>
           </div>
-          <img src={host.picture} alt="L'hôte de l'appartement" className="infos__host--pic" />
-        </div>
-      </article>
-      <article className="tags-rating">
-        <span className="tags">
-          {tags.map((tag, index) => (
-            <span key={index} className="tags__tag">
-              {tag}
-            </span>
-          ))}
-        </span>
-        <div className="container-position">
-          <span className="rating">
-            {renderStars()}
+          <span className="tags">
+            {tags.map((tag, index) => (
+              <span key={index} className="tags__tag">
+                {tag}
+              </span>
+            ))}
           </span>
-          <div className="mobile__host">
-            <div className="mobile__host--name">
+        </article>
+        <article className="right-side">
+          <div className="infos__host">
+            <div className="infos__host--name">
               {host.name.split(' ').map((part, index) => (
                 <p key={index} className={`name-part ${index === 0 ? 'first-name' : 'last-name'}`}>
                   {part}
                 </p>
               ))}
             </div>
-            <img src={host.picture} alt="L'hôte de l'appartement" className="mobile__host--pic" />
+            <img src={host.picture} alt="L'hôte de l'appartement" className="infos__host--pic" />
           </div>
-        </div>
-      </article>
+          <div className="position">
+            <span className="rating">
+              {renderStars()}
+            </span>
+          </div>
+        </article>
+      </div>
       <div className="details">
         <Collapse
           title="Description"
