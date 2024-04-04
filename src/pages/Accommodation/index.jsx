@@ -1,19 +1,32 @@
-import React from "react";
-import { useParams } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import { apartmentsList } from "../../data/apartments.js";
 import Slideshow from "../../components/Slideshow";
 import "../../styles/components/_slideshow.scss";
 import AccommodatContainer from "../../components/AccommodatContainer";
 import "../../styles/pages/_accommodation.scss";
 import "../../styles/components/_collapse.scss";
+import Loader from "../../components/Loader";
 
 function Accommodation() {
   const { id } = useParams();
+  const navigate = useNavigate();
+  const [selectedApartment, setSelectedApartment] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
 
-  const selectedApartment = apartmentsList.find(apartment => apartment.id === id);
+  useEffect(() => {
+    const apartment = apartmentsList.find(apartment => apartment.id === id);
 
-  if (!selectedApartment) {
-    return <div>Apartment not found</div>;
+    if (!apartment) {
+      navigate("/error");
+    } else {
+      setSelectedApartment(apartment)
+      setIsLoading(false)
+    }
+  }, [id, navigate])
+
+  if (isLoading) {
+    return <Loader />
   }
 
   return (
