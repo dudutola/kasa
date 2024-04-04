@@ -14,14 +14,16 @@ function Header() {
       setActiveLink("homepage")
     } else if (pathname === "/about") {
       setActiveLink("about")
+    } else if (pathname.startsWith("/accommodation")) {
+      setActiveLink("accommodation")
     } else {
       setActiveLink("")
     }
   }, [location])
 
   return (
-    <nav className="navbar">
-      <Link to='/'><img src={Logo} alt="Logo Kasa" width={143.32} height={46}/></Link>
+    <nav className={`navbar ${activeLink}`}>
+      <Link to='/'><img src={Logo} alt="Logo Kasa"/></Link>
       <div className="navbar__link">
         <Link to='/' className={activeLink === 'homepage' ? 'active' : ''}>Accueil</Link>
         <Link to='/about' className={activeLink === 'about' ? 'active' : ''}>A Propos</Link>
