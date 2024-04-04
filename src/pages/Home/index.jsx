@@ -8,7 +8,6 @@ import BannerImage from "../../assets/Image source 1.png";
 import Card from "../../components/Card";
 
 function Home() {
-
   return (
     <div className="container">
       <Banner
@@ -16,6 +15,8 @@ function Home() {
         alt="Sea and Rocks"
         title="Chez vous, partout et ailleurs"
         filterStyle={{ boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)" }}
+        isHomePage={true}
+        overlayBackground="rgba(0, 0, 0, 0.6)"
       />
       <div className="cards">
         {apartmentsList.map(({ id, title, cover, location }) => (

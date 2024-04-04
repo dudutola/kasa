@@ -13,6 +13,8 @@ function About() {
       <Banner
         imageUrl={BannerImage}
         alt="Mountains"
+        isHomePage={false}
+        overlayBackground="rgba(0, 0, 0, 0.3)"
       />
       <div className="collapsible">
         {aboutList.map(({ id, title, content }) => (
