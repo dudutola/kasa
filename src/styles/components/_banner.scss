@@ -30,17 +30,23 @@
     transform: translate(-50%, -50%);
     width: 100%;
 
-      & h1 {
-        color: white;
-        -webkit-text-stroke: 1px black;
-        font-size: 48px;
-        font-weight: bold;
-      }
+    & h1 {
+      color: white;
+      -webkit-text-stroke: 1px black;
+      font-size: 48px;
+      font-weight: bold;
+    }
   }
 }
 
 @media (max-width: 1024px) {
   .banner {
+    height: 190px;
+
+    img {
+      height: 190px;
+    }
+
     &__title {
       & h1 {
         font-size: 38px;
@@ -51,26 +57,22 @@
 
 @media (max-width: 767.98px) {
   .banner {
-    height: 112px;
-    margin-bottom: 22px;
+    height: 111px;
     border-radius: 10px;
 
     img {
-      object-fit: cover;
-      object-position: center;
-      width: 100%;
-      filter: none;
+      height: 111px;
     }
 
     &__title {
       align-items: flex-start;
       margin-left: 16px;
 
-        & h1 {
-          -webkit-text-stroke: 0px;
-          font-size: 24px;
-          width: 62%;
-        }
+      & h1 {
+        -webkit-text-stroke: 0px;
+        font-size: 24px;
+        width: 62%;
+      }
     }
   }
 }
