@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 function Card({ id, title, cover, location }) {
   return (
+    <>
     <Link id={id} to={`/accommodation/${id}`}>
       <article className="card">
         <div className="card__content">
@@ -13,6 +14,7 @@ function Card({ id, title, cover, location }) {
         </div>
       </article>
     </Link>
+    </>
   )
 }
 

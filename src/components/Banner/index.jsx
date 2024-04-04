@@ -1,14 +1,12 @@
 import React from "react";
 import "../../styles/components/_banner.scss";
 
-function Banner({ imageUrl, alt, filterStyle, marginBottom, overlayBackground, title, isHomePage }) {
+function Banner({ imageUrl, alt, filterStyle, overlayBackground, title, isHomePage }) {
   const bannerStyle = filterStyle ?
   { boxShadow: filterStyle.boxShadow } : {};
 
-  const marginBottomStyle = isHomePage || marginBottom ? { marginBottom: '43px' } : {};
-
   return (
-    <div className="banner" style={{...bannerStyle, ...marginBottomStyle}}>
+    <div className="banner" style={bannerStyle}>
       <img src={imageUrl} alt={alt}  />
       <div className="banner__overlay" style={{ background: overlayBackground}}></div>
       {isHomePage && (

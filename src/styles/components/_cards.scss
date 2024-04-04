@@ -7,11 +7,11 @@
   padding: 56px 50px 43px;
   background-color: #F6F6F6;
   grid-auto-flow: row;
+  margin-top: 43px;
 }
 
 .card {
   border-radius: 10px;
-  background-image: linear-gradient(to bottom, #FF6060 100%, #F6F6F6 45%);
   display: flex;
   flex-direction: column-reverse;
   overflow: hidden;
@@ -49,6 +49,9 @@
 @media (max-width: 1024px) {
   .cards {
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px 50px;
+    padding: 46px 40px 34px;
+    margin-top: 34px;
   }
 }
 
@@ -61,5 +64,6 @@
     padding: 22px 0 0;
     background-color: white;
     grid-auto-flow: row;
+    margin-top: 0;
   }
 }
