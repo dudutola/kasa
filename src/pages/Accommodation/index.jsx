@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { apartmentsList } from "../../data/apartments.js";
 import Slideshow from "../../components/Slideshow";

@@ -2,7 +2,11 @@
   padding: 50px 0;
 }
 
-// @media (max-width: 1024px) {}
+@media (max-width: 1024px) {
+  .container {
+    padding: 40px 0;
+  }
+}
 
 @media (max-width: 767.98px) {
   .container {

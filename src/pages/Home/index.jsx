@@ -1,4 +1,3 @@
-import React from "react";
 import { apartmentsList } from "../../data/apartments.js";
 import "../../styles/pages/_home.scss";
 import "../../styles/components/_banner.scss";

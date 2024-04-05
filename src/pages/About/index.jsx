@@ -1,4 +1,3 @@
-import React from "react";
 import { aboutList } from "../../data/aboutList";
 import "../../styles/components/_banner.scss";
 import "../../styles/pages/_about.scss";

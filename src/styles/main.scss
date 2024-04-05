@@ -1,3 +1,17 @@
+@import './pages/home';
+@import './pages/about';
+@import './pages/accommodation';
+
+@import './layout/footer';
+@import './layout/header';
+
+@import './components/banner';
+@import './components/cards';
+@import './components/error';
+@import './components/collapse';
+@import './components/slideshow';
+@import './components/_loader';
+
 * {
   font-family: 'Montserrat', sans-serif;
 }

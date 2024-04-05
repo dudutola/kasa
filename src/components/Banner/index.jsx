@@ -1,4 +1,3 @@
-import React from "react";
 import "../../styles/components/_banner.scss";
 
 function Banner({ imageUrl, alt, filterStyle, overlayBackground, title, isHomePage }) {
