@@ -16,7 +16,15 @@
   }
 }
 
-// @media (max-width: 1024px) {}
+@media (max-width: 1024px) {
+  .footerbar {
+
+    p {
+      margin: 24px 0 0;
+      font-size: 20px;
+    }
+  }
+}
 
 @media (max-width: 767.98px) {
   .footerbar {

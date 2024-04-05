@@ -12,7 +12,6 @@
 
 .collapse {
   overflow: hidden;
-  // margin-top: 30px;
 
   &__card {
     display: flex;
@@ -37,7 +36,7 @@
     }
 
     .icon {
-      transition: all 0.4s ease-in-out;
+      transition: all 0.3s ease-in-out;
     }
 
     .fa-chevron-up,
@@ -97,8 +96,6 @@
   }
 
   .collapse {
-    // margin-top: 20px;
-
     &__card {
       &--title {
         font-size: 13px;
@@ -110,9 +107,5 @@
         padding: 10.29px 12px 12.57px;
       }
     }
-
-    // &__content {
-    //   margin-bottom: 19px;
-    // }
   }
 }
