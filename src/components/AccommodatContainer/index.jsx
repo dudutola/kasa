@@ -1,4 +1,6 @@
 import Collapse from "../Collapse";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 import "../../styles/components/_collapse.scss";
 
 function AccommodatContainer({ title, description, host, rating,location, equipments, tags }) {
@@ -8,8 +10,8 @@ function AccommodatContainer({ title, description, host, rating,location, equipm
     const stars = []
 
     for (let i = 0; i < 5; i++) {
-      const starClass = i < ratingNumber ? 'fa fa-star rated' : 'fa fa-star unrated';
-      stars.push(<i key={i} className={starClass}></i>)
+      const starClass = i < ratingNumber ? 'rated' : 'unrated';
+      stars.push(<FontAwesomeIcon key={i} icon={faStar} className={starClass} />)
     }
     return stars
   }

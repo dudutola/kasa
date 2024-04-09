@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import "../../styles/components/_collapse.scss";
 
 function Collapse({ title, content, initialState }) {
@@ -14,7 +16,11 @@ function Collapse({ title, content, initialState }) {
         <div className="collapse__card--title">
           <span>{title}</span>
         </div>
-        <i className={`icon fa-solid fa-chevron-${displayText ? 'down' : 'up'}`} onClick={handleClick}></i>
+        <FontAwesomeIcon
+          icon={displayText ? faChevronDown : faChevronUp}
+          className="icon"
+          onClick={handleClick}
+        />
       </article>
       <div className={`collapse__content ${displayText ? '' : 'open'}`}>
         <p className="equipment-only">{content}</p>
