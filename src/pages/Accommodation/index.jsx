@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { apartmentsList } from "../../data/apartments.js";
+import apartmentsList from "../../data/appartments.json";
 import Slideshow from "../../components/Slideshow";
 import "../../styles/components/_slideshow.scss";
 import AccommodatContainer from "../../components/AccommodatContainer";

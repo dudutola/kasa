@@ -1,4 +1,4 @@
-import { apartmentsList } from "../../data/apartments.js";
+import apartmentsList from "../../data/appartments.json";
 import "../../styles/pages/_home.scss";
 import "../../styles/components/_banner.scss";
 import "../../styles/components/_cards.scss";

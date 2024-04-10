@@ -1,4 +1,5 @@
-import { aboutList } from "../../data/aboutList";
+// import { aboutList } from "../../data/aboutList";
+import aboutList from "../../data/aboutList.json";
 import "../../styles/components/_banner.scss";
 import "../../styles/pages/_about.scss";
 import "../../styles/components/_collapse.scss";
